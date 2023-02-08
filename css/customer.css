@@ -1,0 +1,139 @@
+.customer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #66f1f1;
+    margin-top: 280px;
+    min-height: 60vh;
+}
+.customer-section img {
+    height: 180px;
+    cursor: pointer;
+    transition: border 0.4s;
+}
+.customer-section img:hover {
+    border: 1px solid #1f84ac;
+    border-radius: 50%;
+}
+.customer-section h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.customer-section h4 {
+    color: #d63f3f;
+}
+.customer-section p {
+    font-size: 0.75rem;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.card {
+    flex: 1;
+    margin: 10px;
+    background-color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+.customer-section p {
+    text-align: center;
+    margin-top: 20px;
+}
+.customer-btn {
+    background-color: #d63f3f;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+    transition: background 0.4s;
+    transition: border 0.4s;
+    transition: color 0.4s;
+}
+.customer-btn:hover {
+    color: #000;
+    background: transparent;
+    border: 1px solid #1f84ac;
+}
+.customer-btn:active {
+    opacity: 0.6;
+}
+@media (max-width: 1200px) {
+    .customer-section h4 {
+        font-size: 0.85rem;
+    }
+    .customer-section p {
+        font-size: 0.65rem;
+    }
+    .card {
+        flex: 1;
+        margin: 10px;
+        background-color: #FFF;
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .customer-section h4 {
+        font-size: 0.85rem;
+    }
+    .customer-section p {
+        font-size: 0.65rem;
+    }
+    .card {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .customer-section {
+        min-height: 55vh;
+    }
+    .customer-section h3 {
+        font-size: 0.9rem;
+    }
+    .customer-section h2 {
+        font-size: 1.36rem;
+    }
+    .customer-section h4 {
+        font-size: 0.75rem;
+    }
+    .customer-section p {
+        font-size: 0.65rem;
+    }
+    .customer-section img {
+        height: 150px;
+    }
+    .card {
+        width: 150px;
+    }
+}
+@media (max-width: 599px) {
+    .customer-section {
+        margin-top: 100px;
+        height: 77vh;
+    }
+    .customer-section img {
+        height: 140px;
+    }
+    .customer-btn {
+        padding: 7px;
+    }
+}
+@media (max-width: 530px) {.customer-section { height: 79vh; }}
+@media (max-width: 480px) {.customer-section { height: 81vh; }}
+@media (max-width: 400px) {
+    .customer-section {
+        margin-top: 75px;
+        height: 85vh;
+    }
+}
+@media (max-width: 399px) {.customer-section { height: 105vh; }}
+@media (max-width: 370px) {.customer-section { height: 107vh; }}
+@media (max-width: 350px) {.customer-section { height: 110vh; }}

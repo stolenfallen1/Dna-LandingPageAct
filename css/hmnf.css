@@ -1,0 +1,134 @@
+/* Header and navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+.nav-text {
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+}
+.nav-text:hover {
+    color: #d63f3f;
+}
+.nav-logo {
+    height: 50px;
+}
+/* main content */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 55vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.5)), url("../img/Hero-Section.png") no-repeat center;
+    background-size: cover;
+}
+.main-subtext,
+.main-btn,
+.main-text {
+    color: #FFF;
+}
+.main-text {
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.main-subtext {
+    white-space: pre-line;
+    font-size: 0.8rem;
+    margin-bottom: 14.5px;
+}
+.main-btn {
+    background-color: #d63f3f;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+.main-btn:hover {
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #d63f3f;
+}
+.main-btn:active {
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #d63f3f;
+    opacity: 0.6;
+}
+/* Footer section */
+.footer {
+    background-color: #000;
+}
+.footer-text {
+    color: #FFF;
+    white-space: pre;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+@media (max-width:768px) {
+    .main-text {
+        font-size: 2.55rem;
+    }
+    .main-subtext {
+        font-size: 0.7rem;
+    }
+    .main-btn {
+        padding: 7px;
+    }
+    .footer-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width:600px) {
+    .nav-text {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+    .nav-logo {
+        height: 38px;
+    }
+}
+@media (max-width:400px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-logo {
+        margin-bottom: 5px;
+        height: 36px;
+    }
+    .main-text {
+        font-size: 2.25rem;
+    }
+    .main-subtext {
+        font-size: 0.65rem;
+    }
+    .main-btn {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+    .main-section {
+        min-height: 50vh;
+    }
+    .footer-text {
+        padding: 15px;
+        font-size: 0.65rem;
+    }
+}

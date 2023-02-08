@@ -1,0 +1,132 @@
+/* Section 1 */
+.section-parent {
+    display: flex;
+    margin-top: 70px;
+}
+.section-child {
+    width: 50%;
+    height: 100px;
+}
+.section-header,
+.section-text {
+    margin-bottom: 20px;
+}
+.section-text {
+    text-align: justify;
+    padding-right: 10px;
+}
+.section-header {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.section1-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 3px;
+}
+.section2-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 3px;
+}
+.section-btn {
+    background-color: #d63f3f;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #FFF;
+    transition: border 0.4s;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}
+.section-btn:hover {
+    color: #000;
+    background-color: #FAF9F6;
+    border: 1px solid #d63f3f;
+}
+.section-btn:active {
+    opacity: 0.6;
+}
+/* Section 2 */
+.section-two-parent {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+}
+@media (max-width: 1200px) {
+    .section2-img {
+        padding-right: 10px;
+    }
+}
+@media (max-width: 1060px) {
+    .section-header {
+        font-size: 1.85rem;
+    }
+    .section-text {
+        font-size: 0.95rem;
+    }
+    .section1-img {
+        width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    .section-header,
+    .section-text {
+        margin-bottom: 8px;
+    }
+    .section-header {
+        font-size: 1.7rem;
+    }
+    .section-text {
+        font-size: 0.75rem;
+    }
+    .section1-img {
+        width: 90%;
+    }
+    .section-child {
+        height: 5px;
+    }
+}
+@media (max-width: 769px) and (min-width: 600px) {
+    .section-header {
+        font-size: 1.6rem;
+    }
+    .section-text {
+        font-size: 0.7rem;
+    }
+    .section1-img {
+        width: 85%;
+        height: 215px;
+    }
+    .section2-img {
+        width: 85%;
+        height: 215px;
+        padding: 0;
+    }
+    .section-btn {
+        padding: 7px;
+    }
+}
+@media (max-width: 599px) {
+    .section-parent,
+    .section-two-parent  {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-child {
+        width: 80%;
+        height: 275px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
+    }
+    .section-header,
+    .section-text {
+        margin-bottom: 5px;
+    }
+}
